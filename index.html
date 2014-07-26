@@ -62,7 +62,10 @@
 			$('#fullpage').fullpage({
 				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
 				anchors: ['Myself', 'Environment', 'Contact'],
-				menu: '#menu'
+				menu: '#menu',
+				navigation: true,
+				scrollingSpeed: 500,
+				scrollOverflow:true
 			});
 
 		});
@@ -102,13 +105,17 @@
 	        <div class="slide">
 		    	<div class="intro">
 			    	<h1>Building up assessments</h1>
-			    	<p>Communication is the goal</p>
+			    	<p>Communication is the goal:</p><br/>
+			    	<p>Making scientific data intelligible for non-experts</p><br/>
 			    </div>
 		    </div>
 	        <div class="slide">
 	    		<div class="intro">
 				    <h1>Connect to the world</h1>
 				    <p>Information and data can't be trapped in a system</p>
+				    <p>They must be easily found and referenced in publication, data indexing systems, mapped in others website.</p><br/>
+				    References: UNEP-live, GEOSS&ndash;GCI<br/>
+				    Tech: geoserver, postgreSQL/PostGIS, geonetwork, WMS/WFS/WCS/CSW
 			    </div>
 		    </div>
 	    </div>
