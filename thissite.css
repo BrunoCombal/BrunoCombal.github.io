@@ -242,3 +242,14 @@ p{
 	z-index: 999;
  }
 
+/* ----- My updates ------*/
+.fp-controlArrow {
+    position: absolute;
+    z-index: 4;
+    top: 75%; !important
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+}

@@ -5,14 +5,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>fullPage.js One Page Scroll Sites</title>
 	<meta name="author" content="Bruno Combal" />
-	<meta name="description" content="fullPage plugin by Alvaro Trigo. Create fullscreen pages fast and simple. One page scroll like iPhone website." />
-	<meta name="keywords"  content="fullpage,jquery,alvaro,trigo,plugin,fullscren,screen,full,iphone5,apple" />
+	<meta name="description" content="Bruno Combal presentation: Developping systems for environment assessments and reports" />
+	<meta name="keywords"  content="environment, Bruno Combal, assessment" />
 	<meta name="Resource-type" content="Document" />
-
 
 	<link rel="stylesheet" type="text/css" href="libs/fullPage.js/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="thissite.css" />
-
 
 	<style>
 
@@ -40,6 +38,11 @@
 			right: 149px;
 			top: 9px;
 		}
+		.social img {
+            position: relative;
+            top: 0%;
+            transform: translateY(0);
+        }
 
 	</style>
 	<!--[if IE]>
@@ -57,8 +60,11 @@
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
 				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-				anchors: ['Myself', 'Environment', 'Expertise', 'Contact'],
-				menu: '#menu'
+				anchors: ['Myself', 'Environment', 'Contact'],
+				menu: '#menu',
+				navigation: true,
+				scrollingSpeed: 500,
+				scrollOverflow:true
 			});
 
 		});
@@ -67,60 +73,68 @@
 </head>
 <body>
 
+    <ul id="menu">
+	    <li data-menuanchor="firstPage"><a href="#Myself">Meet... me</a></li>
+	    <li data-menuanchor="secondPage"><a href="#Environment">Environment assessment</a></li>
+	    <li data-menuanchor="3rdPage"><a href="#Contact">Contacts & Resources</a></li>
+    </ul>
 
-<ul id="menu">
-	<li data-menuanchor="firstPage"><a href="#Myself">Meet...me</a></li>
-	<li data-menuanchor="secondPage"><a href="#Environment">Environment assessment</a></li>
-	<li data-menuanchor="3rdPage"><a href="#Expertise">Contact</a></li>
-</ul>
-
-
-<div id="fullpage">
-	<div class="section " id="section0">
-		<h1>Hey, it's me!</h1>
-		<p>Scientist, data expert, earth monitoring</p>
-		<img src="libs/fullPage.js/examples/imgs/fullPage.png" alt="fullPage" />
-	</div>
-	<div class="section" id="section1">
-	    <div class="slide">
-			<div class="intro">
-				<h1>Environment assessment</h1>
-				<p>Not only vertical scrolling but also horizontal scrolling. With fullPage.js you will be able to add horizontal sliders in the most simple way ever.</p>
-				<img src="libs/fullPage.js/examples/imgs/slider.png" alt="slider" />
-			</div>
-
-		</div>
-	    <div class="slide">
-			<div class="intro">
-				<img src="libs/fullPage.js/examples/imgs/1.png" alt="simple" />
-				<h1>Simple</h1>
-				<p>Easy to use. Configurable and customizable.</p>
-			</div>
-		</div>
-	    <div class="slide">
-			<div class="intro">
-				<img src="libs/fullPage.js/examples/imgs/2.png" alt="Cool" />
-				<h1>Cool</h1>
-				<p>It just looks cool. Impress everybody with a simple and modern web design!</p>
-			</div>
-		</div>
-	    <div class="slide">
-			<div class="intro">
-				<img src="libs/fullPage.js/examples/imgs/3.png" alt="Compatible" />
-				<h1>Compatible</h1>
-				<p>Working in modern and old browsers too! IE 8 users don't have the fault of using that horrible browser! Lets give them a chance to see your site in a proper way!</p>
-			</div>
-		</div>
-	</div>
-	<div class="section" id="section2">
-		<div class="intro">
-			<h1>Contact</h1>
-			<p>linkedIn</p>
-			<p>email</p>
-		</div>
-	</div>
-
-</div>
+    <div id="fullpage">
+	    <div class="section" id="section0">
+	        <h1 >Bruno Combal, PhD</h1>
+		    <p>Blending earth monitoring, environment assessment</p><p>and information systems since 1995!</p><br/>
+		    <p>Just sharing what I learned on my last 15 years of experience</p>
+	    </div>
+	
+	    <div class="section" id="section1">
+	       <div class="slide">
+		    	<div class="intro">
+		    		<h1>Environment assessment</h1>
+		    		<p>From data to informing policy makers</p>
+			    	<p>I'm working on both ends</p>
+			    </div>
+    	    </div>
+    	    
+            <div class="slide">
+		    	<div class="intro">
+			    	<h1>Data & their processing</h1>
+			    	<p>Climate change models, Satellite observation, time series analysis, large databases, exploiting information across thematic domains</p><br/> 
+			    </div>
+		    </div>
+	        <div class="slide">
+		    	<div class="intro">
+			    	<h1>Building up assessments</h1>
+			    	<p>Communication is the goal:</p><br/>
+			    	<p>Making scientific data intelligible for non-experts</p><br/>
+			    </div>
+		    </div>
+	        <div class="slide">
+	    		<div class="intro">
+				    <h1>Connect to the world</h1>
+				    <p>Information and data can't be trapped in a system</p>
+				    <p>They must be easily found and referenced in publication, data indexing systems, mapped in others website.</p><br/>
+				    References: UNEP-live, GEOSS&ndash;GCI<br/>
+				    Tech: geoserver, postgreSQL/PostGIS, geonetwork, WMS/WFS/WCS/CSW
+			    </div>
+		    </div>
+	    </div>
+	
+	    <div class="section" id="section2">
+		    <div class="intro">
+			    <h1>Contacts and resources</h1>
+			    <div class="social">
+			        <a href="http://fr.linkedin.com/in/brunocombal/">
+			            <img src="http://press.linkedin.com/download-media/206/1">
+			        </a>
+		            <a href="&#109;a&#105;l&#116;&#111;:&#98;&#114;&#117;&#110;&#111;&#46;&#99;&#111;&#109;&#98;&#97;&#108;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">
+                        <img src="icons/email.png">
+		            </a>
+		        </div>
+		        <br/>
+   			    <a href="https://github.com/BrunoCombal"><img width="150px" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Logo.png"></a>
+		    </div>
+	    </div>
+    </div>
 
 </body>
 </html>
