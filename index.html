@@ -59,34 +59,48 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-				anchors: ['Myself', 'Environment', 'Contact'],
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#c0edfe','#ccddff'],
+				anchors: ['Myself', 'Research', 'Teaching', 'Environment', 'Capacity','Contact'],
 				menu: '#menu',
 				navigation: true,
 				scrollingSpeed: 500,
 				scrollOverflow:true
 			});
-
 		});
 	</script>
-
 </head>
 <body>
-
     <ul id="menu">
-	    <li data-menuanchor="firstPage"><a href="#Myself">Meet... me</a></li>
-	    <li data-menuanchor="secondPage"><a href="#Environment">Environment assessment</a></li>
-	    <li data-menuanchor="3rdPage"><a href="#Contact">Contacts & Resources</a></li>
+	    <li data-menuanchor="homePage"><a href="#Myself">Home</a></li>
+	    <li data-menuanchor="ResearchPage"><a href="#Research">Research</a></li>
+	    <li data-menuanchor="teaching"><a href="#Teaching">Teaching</a></li>
+	    <li data-menuanchor="environment"><a href="#Environment">Environment assessment</a></li>
+	    <li data-menuanchor="capacity"><a href="#Capacity">Capacity building</a></li>
+	    <li data-menuanchor="contacts"><a href="#Contact">Contacts & Resources</a></li>
     </ul>
 
     <div id="fullpage">
-	    <div class="section" id="section0">
-	        <h1 >Bruno Combal, PhD</h1>
-		    <p>Blending earth monitoring, environment assessment</p><p>and information systems since 1995!</p><br/>
-		    <p>Just sharing what I learned on my last 15 years of experience</p>
+	    <div class="section" id="section0" style="background-image:url('rsrc/AfricaFromSpace.jpeg');background-repeat:no-repeat;background-position:center center;">
+	    	<div style="background-color:rgba(255,255,255,0.4); position:relative; top:4em;">
+	    		<h1>Earth monitoring</h1>
+	    		<p>Research</p><p>Teaching</p><p>Processing</p><p>Assessments</p><p>Capacity building</p>
+	    		<p style="text-align:right; padding-right:4em; padding-bottom:1em; padding-top:3em;">Bruno Combal, PhD</p>
+	    	</div>
 	    </div>
 	
-	    <div class="section" id="section1">
+		<div class="section" id="section1">
+			<h1>Research</h1>
+			<p>Msc: Physics</p>
+			<p>PhD: 1999, Radiative transfer modelling, Theoretical analysis of the inverse problem.</p>
+			<p>Research in precision farming, environment assessment with a special interest to Africa-related issues</p>
+			<p>List of publications: <a href="https://www.researchgate.net/profile/Bruno_Combal">www.researchgate.net/profile/Bruno_Combal</a></p>
+		</div>
+	
+		<div class="section" id="section2">
+			<h1>Teaching</h1>
+		</div>
+	
+	    <div class="section" id="section3">
 	       <div class="slide">
 		    	<div class="intro">
 		    		<h1>Environment assessment</h1>
@@ -118,8 +132,11 @@
 			    </div>
 		    </div>
 	    </div>
+	    
+	    <div class="section" id="section4">
+	    </div>
 	
-	    <div class="section" id="section2">
+	    <div class="section" id="section5">
 		    <div class="intro">
 			    <h1>Contacts and resources</h1>
 			    <div class="social">
